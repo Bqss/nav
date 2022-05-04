@@ -26,7 +26,6 @@ body{
     align-items: center;
     padding: 0 4rem;
     justify-content: space-between;
-
     text-align: center;
 }
 .logo{
@@ -59,14 +58,14 @@ body{
 .toogle{
     display: none;
     position: relative;
-    height: 45%;
+    width: 30px;
+    height: 30px;
     overflow: hidden;
 }
 .toogle .shape{
     width: 30px;
     height: 2.5px;
     background-color: white;
-    z-index: 89;
     transition: all 0.5s;
 }
 .toogle .cb{
@@ -84,9 +83,8 @@ body{
     position: relative;
     transform-origin: 0 0;
     transform: rotate(45deg);
-    top: -2px;
-    left: 8px;
-    width: 35px;
+    left: 20%;
+    
 }
 .toogle .cb:checked ~ .shape:nth-child(3){
     opacity: 0;
@@ -95,9 +93,8 @@ body{
     position: relative;
     transform-origin: 0 0;
     transform: rotate(-45deg);
-    top: 3px;
-    left: 7px;
-    width: 35px;
+    left: 17%;
+    top: 2%;
 }
 .navbar .hidden{
     top: 8vh;
@@ -110,12 +107,12 @@ body{
         position: absolute;
         height: calc(100vh - 8vh);
         z-index: -1;
-        width: 60vh;
+        width: 100vw;
         background-color: rgba(0, 0, 0, 0.473);
         flex-direction: column;
         align-content: space-between;
         top: 8vh;
-        right: -60vw;
+        right: -100vw;
         transition: all 0.5s;
     }
     
@@ -125,8 +122,7 @@ body{
         align-items: flex-end;
         justify-content: space-around;
         flex-direction: column;
-        z-index: 89;
-        
         
     }
 }
+
